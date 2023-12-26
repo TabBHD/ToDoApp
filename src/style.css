@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+  }
+  .navbar {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    border-bottom: 1px solid #f2f2f2;
+  }
+  .navbar h1 {
+    color: #f1356d;
+  }
+  .navbar .links {
+    margin-left: auto;
+  }
+  .navbar a {
+    margin-left: 16px;
+    text-decoration: none;
+    padding: 6px;
+  }
+  .navbar a:hover {
+    color: #f1356d;
+  }
+  .navbar nav{
+    margin-left: auto;
+  }
+  .content {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  
+ .task-preview fieldset {
+    border: none /* Border style */
+    
+  }
+
+
+.task-preview legend {
+  font-weight: bold; /* Style for the legend text */
+  margin-bottom: 10px; /* Spacing between legend and content */
+  
+}
+
+.task-preview {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0;
+  margin-bottom: 20px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.task-preview a{
+  text-decoration: none;
+
+}
+
+.todo{
+  margin-top: 6.5px;
+
+}
+
+
+
+.task-preview-hard:hover{
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+  background-color: #a12f2f; 
+
+}
+
+.task-preview-normal:hover{
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+  background-color: #599313; 
+
+}
+
+.task-preview-easy:hover{
+  box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+  background-color: #007FFF; 
+
+}
+
+.tasks-list h1 {
+    font-size: 2rem; /* Adjust the font size as needed */
+    font-weight: bold; /* Set the font weight to bold */
+    color: #333; /* Change the text color */
+    margin-bottom: 20px; /* Add margin at the bottom for spacing */
+    text-align: center;
+  }
+
+ .create-task  input{
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+ }
+ .create-task  button{
+ width: 10%;
+ height: 41px;
+ border: 1px solid #ccc;
+ border-left: none;
+
+ }
+ .create-task button:hover{
+  background-color: #3388e9;
+}
+.create-task{
+  text-align: center;
+}
+
+.task-details{
+  text-align: center;
+}
+
+.not-found {
+  text-align: center;
+  margin-top: 50px; /* Adjust the margin as needed */
+  font-family: 'Montserrat', sans-serif;
+}
+
+.not-found h2 {
+  font-size: 32px;
+  color: #333; /* Change the color as desired */
+}
+
+.not-found p {
+  font-size: 18px;
+  color: #666; /* Change the color as desired */
+  margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+.not-found a {
+  text-decoration: none;
+  color: #f1356d; /* Change the color as desired */
+  font-weight: bold;
+}
+.done{
+  text-align: right;
+}
+
+
+.edit-task {
+  margin: 20px;
+}
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.task-form label {
+  margin-bottom: 5px;
+}
+
+.task-form input,
+.task-form select {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.edit-btn {
+  padding: 8px 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-btn:hover {
+  background-color: #45a049;
+}
+
+.task-details {
+  margin: 20px;
+}
+
+.task-details h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.task-details article {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.task-details p {
+  margin-bottom: 8px;
+}
+
+.task-details nav {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.task-details .edit-link {
+  padding: 8px 12px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.task-details .edit-link:hover {
+  background-color: #45a049;
+}
+.edit-task h1{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.task-details .delete-btn {
+  padding: 8px 12px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.home-btn {
+  padding: 8px 12px;
+  background-color: #3388e9;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.task-details nav{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center; /* Center aligns the buttons */
+    align-items: center; /* Vertically aligns the buttons */
+
+}
+.task-form input[type="checkbox"] {
+  margin-right: 8px;
+  width: 30px; /* Adjust width */
+  height: 30px; /* Adjust height */
+  border: 2px solid #ccc;
+  border-radius: 6px; /* Adjust border-radius for a rounded look */
+  cursor: pointer;
+  outline: none;
+}
+
+.task-form input[type="checkbox"]:checked {
+  background-color: #4caf50;
+  border-color: #4caf50;
+}
+
+.task-form input[type="checkbox"]:checked::after {
+  font-size: 24px; /* Adjust checkmark size */
+  color: white;
+  text-align: center;
+  line-height: 30px; /* Center the checkmark vertically */
+  display: block;
+}
+/* Add these styles to your CSS file */
+
+.search {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.search h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.search input[type="text"],
+select {
+  width: calc(100% - 20px);
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.task-preview {
+  margin-top: 10px;
+}
+
+.task-preview div {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.task-preview a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.todo {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.done {
+  font-weight: bold;
+  margin-top: 5px;
+}
